@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@nshopofc - 71231007 - Personal Web Page</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        #changeColor {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="photo_6321267617565882672_x.jpg" alt="Foto Diri Anda">
+    <h1>SALVATORIS CREDO SAECULARIO LIBUT</h1>
+    <p>@nshopofc</p>
+    <p>Nunukan, Kalimantan Utara, Indonesia</p>
+    <p>Skillset Pemrograman: HTML, CSS, dan Javascrip.</p>
+    <button id="changeColor">Ganti Warna Background</button>
+    <script>
+        document.getElementById('changeColor').addEventListener('click', function() {
+            var colors = ['red', 'blue', 'green', 'white'];
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
